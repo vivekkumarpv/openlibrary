@@ -7,6 +7,7 @@
         <title>Open Library</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick/slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -21,7 +22,14 @@
           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
           <![endif]-->
 
-      <header class="topsec">
+      <header class="logo-bar">
+	<h1 class="logo">
+	  <a href="">
+	    <span class="iconochive-logo" aria-hidden="true"></span>
+	    <img class="logo-icon" src="/static/imgs/logo.png"/>
+	    <span class="logo-txt logo-bold">OPEN</span><span class="logo-txt">Library</span>
+	  </a>
+	</h1>
 	<div class="searchcontainer">
 	  <select class="searchoptions">
 	    <option>Books</option>
@@ -29,7 +37,39 @@
 	    <option>Subjects</option>
 	    <option>Lists</option> 
 	  </select><input class="searchbox"/><button type="submit" class="searchbtn" value="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+	</div>	
+	<div class="second-nav">
+	  <ul>
+	    <li><a href="">Advanced Search</a></li>
+	    <li><a href="">Browsing History</a></li>
+	    <li><a href="">Help &amp; Support</a></li>
+	  </ul>
 	</div>
+      </header>
+
+      <div style="margin-top: 50px;">
+	<div class="nav-menu">
+	  <ul>
+	    <li><strong>Popular Books</strong></li>
+	    <ul>
+	      <li>Lorum ipsum</li>
+	      <li>Random text</li>
+	    </ul>
+	    <li><strong>Recently Returned</strong></li>
+	    <ul>
+	      <li>Best sellers</li>
+	    </ul>
+	    <li><strong>Worth the Wait</strong></li>
+	  </ul>
+	</div>
+      </div>
+      <div style="float: left;">
+	<img src="/static/imgs/body.png"/>
+      </div>
+      
+<!--      
+      <header class="topsec">
+
 	<div class="accountcontainer">
 	  <a href="#">Lists <i class="more fa fa-caret-down" aria-hidden="true"></i></a> 
 	  <a href="#"><span class="username">mek</span> <i class="fa fa-user" aria-hidden="true"></i></a>
@@ -192,7 +232,7 @@
 	  
 	</div>
       </div>
-	
+-->	
       <script type="text/javascript" src="/static/js/app.js"></script>      
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
