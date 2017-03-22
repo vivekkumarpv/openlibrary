@@ -4,6 +4,50 @@ body {
     padding: 0px;
 }
 
+header {
+
+}
+
+.second-nav {
+    background-color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: .75em;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header ul li a {
+    color: #000;
+    text-decoration: none;
+}
+    
+.logo-txt {
+    font-size: .8em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.logo-bold {
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.logo-bar {
+    box-shadow: 0px 3px 5px #ccc;
+    padding-top: 0px;
+    height: 45px;
+}
+
 .topsec { 
     width: 100%;
     background-color: #036DAA;
@@ -11,7 +55,20 @@ body {
 }
 
 .logo {	       
-    width: 150px;
+    margin: 10px;
+    margin-top: 9px;
+    margin-bottom: 6px;
+}
+
+.logo a {
+    color: #000;
+    text-decoration: none;
+}
+
+.logo-icon {
+    position: absolute;
+    top: 10px;
+    width: 30px;
 }
 
 .logocontainer {
@@ -19,7 +76,7 @@ body {
     margin-right: 20px;
     width: 150px;
     float: left;
-    margin-left: 10px;
+    margin-left: 75px;
 }
 
 .accountcontainer a span.username {
@@ -48,13 +105,14 @@ body {
 
 .searchcontainer {
     position: absolute;
-    top: 36px;
-    left: 170px;
+    top: 4px;
+    left: 270px;
     min-width: 250px;
     right: 100px;
 }
 
 .searchoptions {
+    font-family: 'Poppins', sans-serif;
     padding: 0px 10px;
     margin: 0px;
     -webkit-appearance: none;
@@ -65,11 +123,14 @@ body {
     border-bottom-left-radius: 5px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    background-color: #000;
+    color: #fff;
     position: relative;
     top: 1px;
     height: 40px;
     border: 0px;
-    font-size: .9em;
+    font-size: .8em;
+    font-weight: 300;
 }
 
 .upper {
@@ -79,7 +140,7 @@ body {
 .searchoptions:after {
     content:"\f0dc";
     font-family: FontAwesome;
-    color: #000;
+    color: #333;
     padding: 12px 8px;
     position: absolute; right: 0; top: 0;
     background: red;
@@ -96,6 +157,8 @@ body {
     width: 50%;    
     height: 30px;
     border: none;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
 }
 
 .searchbtn {
@@ -105,10 +168,31 @@ body {
     top: 2px;
     height: 42px;
     border: 0px;
-    background-color: #028bda;
+    background-color: #000; //#028bda;
     color: #fff;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.nav-menu {
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+    font-weight: 100;
+    padding: 10px;
+    min-height: 400px;
+    height: 100%;
+    border-right: 1px solid #eee;
+    width: 150px;
+    float: left;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.nav-menu ul li strong {
+    font-weight: 500;
 }
 
 i.more {
