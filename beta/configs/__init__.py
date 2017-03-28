@@ -13,7 +13,7 @@
 import os
 import sys
 import types
-import configparser
+import ConfigParser as configparser
 
 path = os.path.dirname(os.path.realpath(__file__))
 approot = os.path.abspath(os.path.join(path, os.pardir))
