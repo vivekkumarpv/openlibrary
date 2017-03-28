@@ -4,7 +4,7 @@
 """
     __init__.py
     ~~~~~~~~~~~
-    
+
 
     :copyright: (c) 2016 by Anonymous
     :license: BSD, see LICENSE for more details.
@@ -20,4 +20,3 @@ class Base(MethodView):
 class Partial(MethodView):
     def get(self, partial):
         return render_template('partials/%s.html' % partial)
-
