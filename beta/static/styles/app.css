@@ -21,7 +21,6 @@ header ul li a {
 }
     
 .account-details {
-    padding: 0px 15px;
     justify-content: space-between;
     min-width: 350px;
     display: flex;
@@ -35,10 +34,9 @@ ul.account-details li {
     min-width: 70px;
     width: 100%;
     text-align: center;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
     border-right: 1px solid #fafafa;
+    margin-right: 0px;
 }
 
 ul.account-details li.my-account {
@@ -252,9 +250,6 @@ ul.account-details li.my-account {
     padding: 0;
     text-align: center;
     cursor: pointer;
-}
-
-@media screen and (max-width: 991px) {
 }
 
 @media screen and (max-width: 991px) {
