@@ -46,6 +46,7 @@ $putctx("robots", "noindex,nofollow")
                 <ul>
                     <li><a href="#about">$_("About")</a></li>
                     <li><a href="#web">$_("Links")</a></li>
+                    <li><a href="#ids">$_("IDs")</a></li>
                 </ul>
 
                 <div id="about">
@@ -116,6 +117,21 @@ $putctx("robots", "noindex,nofollow")
                 <div id="web">
                     $:render_template("books/edit/web", page, prefix="author--")
                 </div>
+                <div id="ids">
+                  <div class="label">
+                    <label for="wmd-input">$_("Remote Identifiers")</label>
+                    <span class="tip">$_('Link this Author to a remote service by adding its foreign identifier')</span>
+                  </div>
+		  <div class="input">
+		    <input type="text" placeholder="VIAF ID" name="author--id_viaf" id="viaf" value="$page.remote_ids.viaf"/>
+		  </div>
+		  <div class="input">
+		    <input type="text" placeholder="Wikidata ID" name="author--id_wikidata" id="wikidata" value="$page.remote_ids.wikidata"/>
+		  </div>
+		  <div class="input">
+		    <input type="text" placeholder="LibraryThing ID" name="author--id_librarything" id="librarything" value="$page.remote_ids.librarything"/>
+		  </div>
+		</div>
             </div>
 
         </div>

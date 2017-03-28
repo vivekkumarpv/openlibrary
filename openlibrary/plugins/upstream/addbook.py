@@ -757,6 +757,18 @@ class author_edit(delegate.page):
             alternate_names = author.get('alternate_names', None) or ''
             author.alternate_names = [name.strip() for name in alternate_names.replace("\n", ";").split(';') if name.strip()]
             author.links = author.get('links') or []
+            if not getattr(author, 'remote_ids', {}):
+                author['remote_ids'] = {}
+            remote_ids = {
+                'wikidata': author.get('id_wikidata', None),
+                'viaf': author.get('id_viaf', None),
+                'librarything': author.get('id_viaf', None)
+            }
+            print(remote_ids)
+            for rid in remote_ids:
+                if remote_ids[rid]:
+                    author.remote_ids[rid] = remote_ids[rid]
+
             return author
 
 
