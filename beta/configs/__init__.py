@@ -4,7 +4,7 @@
 """
     __init__.py
     ~~~~~~~~~~~
-    
+
 
     :copyright: (c) 2016 by Anonymous
     :license: BSD, see LICENSE for more details.
