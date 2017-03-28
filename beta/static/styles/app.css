@@ -1,24 +1,13 @@
 body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
     background-color: #fff;
     margin: 0px;
     padding: 0px;
 }
 
 header {
-
-}
-
-.second-nav {
-    background-color: #eee;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    font-size: .75em;
-}
-
-header ul {
-    list-style-type: none;
-    padding: 10px;
-    margin: 0px;
+    padding-top: 0px;
 }
 
 header ul li {
@@ -31,193 +20,98 @@ header ul li a {
     text-decoration: none;
 }
     
-.logo-txt {
+.account-details {
+    padding: 0px 15px;
+    justify-content: space-between;
+    min-width: 350px;
+    display: flex;
+    flex: 1;
+    order: 3;
+    list-style-type: none;
     font-size: .8em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
 }
 
-.logo-bold {
-    margin-left: 40px;
-    font-weight: 700;
-}
-
-.logo-bar {
-    box-shadow: 0px 3px 5px #ccc;
-    padding-top: 0px;
-    height: 45px;
-}
-
-.topsec { 
+ul.account-details li {
+    min-width: 70px;
     width: 100%;
-    background-color: #036DAA;
-    height: 125px;
-}
-
-.logo {	       
-    margin: 10px;
-    margin-top: 9px;
-    margin-bottom: 6px;
-}
-
-.logo a {
-    color: #000;
-    text-decoration: none;
-}
-
-.logo-icon {
-    position: absolute;
-    top: 10px;
-    width: 30px;
-}
-
-.logocontainer {
-    position: absolute;
-    margin-right: 20px;
-    width: 150px;
-    float: left;
-    margin-left: 75px;
-}
-
-.accountcontainer a span.username {
-    font-size: 1em;
-    text-decoration: none;
-}
-
-.accountcontainer i {
-    font-size: 1.2em;
-    color: #fff;
-}
-
-.accountcontainer a {
-
-    font-size: 1.3em;
-    color: #fff;
-    text-decoration: none;
-}
-
-.accountcontainer {
-    position: absolute;
-    margin-right: 25px;
-    right: 0px;
-    top: 90px;
-}
-
-.searchcontainer {
-    position: absolute;
-    top: 4px;
-    left: 270px;
-    min-width: 250px;
-    right: 100px;
-}
-
-.searchoptions {
-    font-family: 'Poppins', sans-serif;
-    padding: 0px 10px;
-    margin: 0px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-border-radius: 0px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background-color: #000;
-    color: #fff;
-    position: relative;
-    top: 1px;
-    height: 40px;
-    border: 0px;
-    font-size: .8em;
-    font-weight: 300;
-}
-
-.upper {
-    text-transform:capitalize;
-}
-
-.searchoptions:after {
-    content:"\f0dc";
-    font-family: FontAwesome;
-    color: #333;
-    padding: 12px 8px;
-    position: absolute; right: 0; top: 0;
-    background: red;
-    z-index: 1;
     text-align: center;
-    width: 10%;
-    height: 100%;      
-    pointer-events: none;
-    box-sizing: border-box;   
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-right: 1px solid #fafafa;
+}
+
+ul.account-details li.my-account {
+    padding-right: 0px;
+    text-decoration: underline;
+    border-right: none;
+}
+
+#topbar {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+
+#main-search {
+    flex: 2;
+    margin-top: 6px;
+}
+
+#advanced-options {
+    box-shadow: 0px 1px 4px #ddd inset;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: .75em;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+#main-logo {
+    display: flex;
+    margin: 10px 20px 10px 10px;
+    margin-top: 12px;
+}
+
+#home {
+    display: flex;
 }
 		   
-.searchbox {
-    padding: 5px 10px;
-    width: 50%;    
-    height: 30px;
-    border: none;
-    border-bottom: 1px solid #eee;
-    border-top: 1px solid #eee;
-}
-
-.searchbtn {
-    font-size: 1.1em;
-    padding: 0px 15px;
-    position: relative;
-    top: 2px;
-    height: 42px;
-    border: 0px;
-    background-color: #000; //#028bda;
-    color: #fff;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.nav-menu {
+#home-nav {
     font-family: 'Poppins', sans-serif;
-    font-size: .8em;
+    font-size: .75em;
     font-weight: 100;
     padding: 10px;
     min-height: 400px;
-    height: 100%;
     border-right: 1px solid #eee;
-    width: 150px;
-    float: left;
+    min-width: 175px;
 }
 
-.nav-menu ul {
+#home-nav ul {
     list-style-type: none;
     padding-left: 10px;
 }
 
-.nav-menu ul li strong {
+#home-nav ul li strong {
     font-weight: 500;
 }
 
-i.more {
-    color: #7ea5b9;
-    position: relative;
-    top: 2px;
-    font-size: .9em;
-    margin-right: 10px;
+#home-content {
+    padding: 20px;
+}
+
+.carousel {
+    display: block;
 }
 
 .section-title {
     font-weight: normal;
 }
 
-.content {
-    margin: 0 25px;;
-}
-
-.nostyle {
-    text-decoration: none;
-    color: inherit;
-    
-}
-
 .category-item {
+    filter: grayscale(100%);
     margin: 0 auto;
     padding: 10px;
 }
@@ -226,16 +120,6 @@ i.more {
     text-align: center;
 }
 
-.category-title {
-    padding: 5px;
-    margin: 0px;
-    margin-top: 5px;
-}
-
-.category-title a {
-    color: #000;
-    text-decoration: none;
-}
 
 .category-count {
     font-size: .7em;
@@ -254,24 +138,164 @@ i.more {
 }
 
 .categories {
-    font-family: Georgia,"Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman",serif;
     background-color: #fafafa;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-.audiobooks {
-    font-family: Georgia,"Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman",serif;
-    background-color: #fafafa;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.audiobook-item {
-    width: 40px;
-    padding: 10px;
 }
 
 .slick-prev:before, .slick-next:before{
     color: #aaa;
+}
+
+.logo {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo-icon {    
+    margin-right: 5px;
+    margin-top: 3px;
+    width: 21px;
+    height: 21px;
+}
+
+
+.logo-txt {
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.logo-bold {
+    font-weight: 700;
+}
+
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.searchbar {
+    min-width: 400px;
+    background: #000;
+    height: 40px;
+    border-radius: .3em;
+    display: flex;
+}
+ 
+.searchbar select.facets {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: .9em;
+    padding: 0 10px;
+    text-decoration: none;
+    border-left: 1px solid #2e2e2e;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    border-top-left-radius: .3em;
+    border-bottom-left-radius: .3em;
+}
+
+.searchbar select option {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.searchbox {
+    flex: 1;
+    margin: 3px;
+}
+
+.searchbox form {
+    display: flex;
+}
+
+.search_text{
+    flex: 1;
+    padding: 5px 0 5px 10px;
+    font-size: .9em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    border: 0 none;
+    color: black;
+    outline: none;
+    background: #fff;
+    transition: all 0.5s;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: black;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: black;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: black;
+}
+.search_text:focus {
+    background: #faffb1;
+}
+.search_button {
+    border: 0 none;
+    background: #000 url(/static/imgs/search.png) center no-repeat;
+    width: 60px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 991px) {
+     /* start of phone styles */
+
+    #topbar{
+	flex-direction: column;
+	align-items: stretch;
+    }
+
+    #main-logo {
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	padding: 10px;
+	order: 1;
+    }
+    .account-details {
+	order: 3;
+    }
+
+    #main-search {
+	order: 2;
+	margin-top: 0px;
+	padding: 0px;
+    }
+    
+    .searchbar {
+	border-radius: 0px;
+    }
+
+    #home {
+	flex-direction: column;
+	align-items: stretch;
+    }
+
+    #home-nav {
+	display: none;
+	min-height: inherit;
+	border: none;
+	min-width: none;
+    }
+
 }
