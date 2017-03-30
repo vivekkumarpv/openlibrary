@@ -15,10 +15,11 @@ from flask.ext.routing import router
 import views
 from configs import options
 
-urls = ('/partials/<path:partial>', views.Partial,
-        '/<path:uri>', views.Base,
-        '/', views.Base
-        )
+urls = (
+    '/partials/<path:partial>', views.Partial,
+    '/books/<path:id>', views.WorkEdition,
+    '/', views.Base
+)
 app = router(Flask(__name__), urls)
 
 if __name__ == "__main__":

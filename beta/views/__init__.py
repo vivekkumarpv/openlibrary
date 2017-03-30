@@ -15,7 +15,13 @@ from flask.views import MethodView
 
 class Base(MethodView):
     def get(self, uri=None):
-        return render_template('base.html')
+        template = uri or "home"
+        return render_template('base.html', template=template)
+
+class WorkEdition(MethodView):
+    def get(self, id=None):
+        return render_template('base.html',
+                               template='book')
 
 class Partial(MethodView):
     def get(self, partial):
