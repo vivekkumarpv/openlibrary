@@ -9,7 +9,7 @@
     :license: see LICENSE for more details.
 """
 
-from flask import render_template
+from flask import render_template, request
 from flask.views import MethodView
 
 class Base(MethodView):
@@ -19,8 +19,8 @@ class Base(MethodView):
 
 class WorkEdition(MethodView):
     def get(self, id=None):
-        return render_template('base.html',
-                               template='book')
+        status = request.args.get('status', 'read')
+        return render_template('base.html', template='book', status=status)
 
 class Partial(MethodView):
     def get(self, partial):

@@ -8,9 +8,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/styles/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="/static/styles/app.css"/>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   </head>
   <body>
@@ -27,24 +29,25 @@
 	  {% include "/partials/searchbox.html" %}
 	</div>
 	<ul class="account-details">	  
-	  <li>My loans<br/>3/5</li>
-	  <li>My Waitlist<br/>6</li>
-	  <li>My Lists<br/>3</li>
-	  <li class="my-account"><a href="">Mek</a></li>
+	  <li><b>My loans</b><br/>3/5</li>
+	  <li><b>My Waitlist</b><br/>6</li>
+	  <li><b>My Lists</b><br/>3</li>
+	  <li class="my-account">
+	    <a href="">
+	      <img src="https://avatars3.githubusercontent.com/u/978325?v=3&s=45"/>
+	    </a>
+	  </li>
 	</ul>
       </div>
-      <ul id="advanced-options">
-	<li><a href="">Advanced Search</a></li>
-	<li><a href="">Browsing History</a></li>
-	<li><a href="">Help &amp; Support</a></li>
-      </ul>
+      <div id="advanced-options"></div>
     </header>
 
     {% if template %}
       {% include "/partials/" + template + ".html" %}
     {% endif %}
       
-    <script type="text/javascript" src="/static/js/app.js"></script>      
+    <script type="text/javascript" src="/static/js/api.js"></script>
+    <script type="text/javascript" src="/static/js/app.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

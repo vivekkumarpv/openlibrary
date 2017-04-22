@@ -1,3 +1,32 @@
+
 <div id="book">
-  <h1>Book</h1>
+
+  <div class="cta-bar">
+    <p class="edition-details">
+      <button class="btn btn-default">Browse Editions <span class="badge number-of-editions"></span></button>
+      &mdash; you're seeing the latest, available edition
+    </p>
+    <div class="ctas">
+      {% include "partials/cta-" + status  + ".html" %}
+    </div>
+  </div>
+
+  <hr/>
+ 
+  <div class="top-section">
+    <div><img class="bookcover" src="" title="bookcover"/></div>
+    <div class="work-primary-metadata">
+      <h1>
+	<span class="title"></span> <span class="subtitle"></span>
+      </h1>
+      <p class="authors">by <a href="" class="author"></a></p>
+      
+      <p class="work-subjects">	
+      </p>
+
+      <p class="description"></p>
+
+      <hr/>
+    </div>
+  </div>
 </div>
