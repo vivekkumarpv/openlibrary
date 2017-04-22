@@ -2,6 +2,16 @@ $(document).ready(function(){
 
     var api_url = 'https://openlibrary.org';
 
+    $('.search_text').focusin(function(e) {
+	$('.searchbar').addClass('active');
+	$('#search-dropdown').toggle();
+    });
+
+    $('.search_text').blur(function(e) {
+	$('.searchbar').removeClass('active');
+	$('#search-dropdown').toggle();
+    });
+
     var carousel = function(selector, a, b, c, d, e) {
 	$(selector).slick({
 	    dots: true,
@@ -182,4 +192,32 @@ $(document).ready(function(){
 
     carousel('.modernbooks', 10, 7, 5, 4, 3);
     carousel('.prolificauthors', 10, 7, 5, 4, 3);
+
+    var olid = Browser.extractOlidFromUrl(window.location.pathname);
+    console.log(olid);
+    if (olid) {
+	Work.get(olid, function(work) {
+	    var authors = work.authors;
+	    for (var author_id in work.authors) {
+		Author.get(Browser.extractOlidFromUrl(
+		    work.authors[author_id].author.key), function(author) {
+			$('.authors').append('<a href="" class="author">' + author.personal_name + '</a>');
+		})
+	    }
+
+	    $('.subtitle').text(work.subtitle);
+	    $('.title').text(work.title);
+	    $('.description').text(work.description.value);
+	    $('.number-of-editions').text(work.number_of_editions);
+	    $('.number-of-subjects').text(work.subjects.length);
+	    $('.bookcover').attr('src', 
+		'https://covers.openlibrary.org/w/id/' + work.covers[0] + '-M.jpg');
+
+	    for (var subject in work.subjects) {
+		var sj = work.subjects[subject];
+		$('.work-subjects').append('<a class="link-label" href="">' + sj + "</a>, ");
+	    }
+	    $('.work-subjects').append(' <a href="" class="link-label link-label-cta"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> add subject?</a>');
+	});
+    }
 });

@@ -1,15 +1,26 @@
 
-<div class="searchbar">
-  <select class="facets">
-    <option>Books</option>
-    <option>Authors</option> <!-- https://openlibrary.org/search/authors -->
-    <option>Topics</option>
-    <option>Lists</option>
-  </select>
-  <div class="searchbox">
-    <form action="https://openlibrary.org/search" method="get">
-      <input type="text" name="q" class="search_text" placeholder="Search"/>
-      <input type="button" name="search_button" class="search_button"/>
-    </form>
+<div class="dropdown-search">
+  <div class="searchbar">
+    <a href="" class="searchbtn"></a>
+    <div class="searchbox">
+      <form action="https://openlibrary.org/search" method="get">
+	<input type="text" name="q" class="search_text" placeholder="Search"
+	       autocomplete="off"/>
+	<div name="search_button" class="search_button">
+	  <span class="caret"></span>
+	</div>
+      </form>
+    </div>
+  </div>
+  <div id="search-dropdown" class="dropdown-section">
+    <div class="dropdown-items-container">
+      <div class="dropdown-items">
+	<a href="/search"><img src="/static/imgs/books.png"/> <span>Books</span></a>
+	<a href=""><img src="/static/imgs/authors.png"/> <span>Authors</span></a>
+	<a href=""><img src="/static/imgs/subjects.png"/> <span>Subjects</span></a>
+	<a href=""><img src="/static/imgs/lists.png"/> <span>Lists</span></a>
+      </div>
+    </div>
   </div>
 </div>
+  
