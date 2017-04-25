@@ -1,12 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env pythonNone
 #-*-coding: utf-8 -*-
 
 """
     app.py
     ~~~~~~
 
-    :copyright: (c) 2017 by Internet Archive
-    :license: see LICENSE for more details.
+
+    :copyright: (c) 2016 by Anonymous
+    :license: BSD, see LICENSE for more details.
 """
 
 from flask import Flask
@@ -17,6 +18,7 @@ from configs import options
 urls = (
     '/partials/<path:partial>', views.Partial,
     '/books/<path:id>', views.WorkEdition,
+    '/search', views.Search,
     '/', views.Base
 )
 app = router(Flask(__name__), urls)

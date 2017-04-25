@@ -9,7 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/styles/bootstrap.min.css"/>
+ 
     <link rel="stylesheet" type="text/css" href="/static/styles/app.css"/>
+
+   <!--
+     <link rel="stylesheet" type="text/css" href="/static/styles/clean.css"/>
+   -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -29,7 +34,7 @@
 	  {% include "/partials/searchbox.html" %}
 	</div>
 	<ul class="account-details">	  
-	  <li><b>My loans</b><br/>3/5</li>
+	  <li><b>My Loans</b><br/>3/5</li>
 	  <li><b>My Waitlist</b><br/>6</li>
 	  <li><b>My Lists</b><br/>3</li>
 	  <li class="my-account">
@@ -42,9 +47,11 @@
       <div id="advanced-options"></div>
     </header>
 
-    {% if template %}
-      {% include "/partials/" + template + ".html" %}
-    {% endif %}
+    <div id="content">
+      {% if template %}
+        {% include "/partials/" + template + ".html" %}
+      {% endif %}
+    </div>
       
     <script type="text/javascript" src="/static/js/api.js"></script>
     <script type="text/javascript" src="/static/js/app.js"></script>
