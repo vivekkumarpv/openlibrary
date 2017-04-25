@@ -1,13 +1,12 @@
-#!/usr/bin/env pythonNone
+#!/usr/bin/env python
 #-*-coding: utf-8 -*-
 
 """
     __init__.py
     ~~~~~~~~~~~
 
-
-    :copyright: (c) 2016 by Anonymous
-    :license: BSD, see LICENSE for more details.
+    :copyright: (c) 2017 by Internet Archive
+    :license: see LICENSE for more details.
 """
 
 from flask import render_template, request
