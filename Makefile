@@ -41,7 +41,7 @@ i18n:
 	$(PYTHON) ./scripts/i18n-messages compile
 
 git:
-	git submodule init
+	git submoddule init
 	git submodule sync
 	git submodule update
 
