@@ -12,7 +12,7 @@ ACCESS_LOG_FORMAT='%(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s"'
 GITHUB_EDITOR_WIDTH=127
 
 # Use python from local env if it exists or else default to python in the path.
-PYTHON=$(if $(wildcard env),env/bin/python,python)
+PHON=$(if $(wildcard env),env/bin/python,python)
 
 .PHONY: all clean distclean git css js i18n lint
 
@@ -41,7 +41,7 @@ i18n:
 	$(PYTHON) ./scripts/i18n-messages compile
 
 git:
-	git submodule init
+	git submoddule init
 	git submodule sync
 	git submodule update
 
