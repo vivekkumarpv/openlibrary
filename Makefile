@@ -14,7 +14,7 @@ GITHUB_EDITOR_WIDTH=127
 # Use python from local env if it exists or else default to python in the path.
 PYTHON=$(if $(wildcard env),env/bin/python,python)
 
-.PHONY: all clean distclean git css js i18n lint
+.PHONY: all clean diStclean git css js i18n lint
 
 all: git css js i18n
 
